@@ -1,0 +1,14 @@
+services:
+  linux-lab:
+    build: .
+    container_name: linux-network
+    tty: true
+    stdin_open: true
+    networks:
+      - lab-net
+    volumes:
+      - .:/network
+
+networks:
+  lab-net:
+    driver: bridge
