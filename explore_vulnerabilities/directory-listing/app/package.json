@@ -1,0 +1,12 @@
+{
+  "description": "Directory Listing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "serve-index": "^1.9.1"
+  }
+}

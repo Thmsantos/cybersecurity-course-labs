@@ -1,0 +1,15 @@
+FROM kalilinux/kali-rolling
+
+RUN apt-get update && apt-get install -y \
+    curl \
+    wget \
+    gobuster \
+    dirb \
+    iputils-ping \
+    nmap \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace
+
+CMD ["/bin/bash"]
